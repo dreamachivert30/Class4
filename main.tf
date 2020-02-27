@@ -10,6 +10,7 @@ resource "aws_vpc" "default" {
     enable_dns_hostnames = true
     tags = {
 	User="Linux"
+    Source = "Internet"
         Name = "${var.vpc_name}"
     }
 }
